@@ -2281,8 +2281,13 @@ setDocument = Sizzle.setDocument = function( node ) {
 			if ( !el.querySelectorAll( "a#" + expando + "+*" ).length ) {
 				rbuggyQSA.push(".#.+[+~]");
 			}
+			
+			// Support: Firefox <=3.6 - 5 only
+			// Old Firefox doesn't throw on a badly-escaped identifier.
+			el.querySelectorAll("\f");
+			rbuggyQSA.push( "[\\r\\n\\f]" );
 		});
-
+		
 		assert(function( el ) {
 			el.innerHTML = "<a href='' disabled='disabled'></a>" +
 				"<select disabled='disabled'><option/></select>";
