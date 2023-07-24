@@ -6,7 +6,7 @@ html,body{
   font-size: 16px;
 }
 body{
-  background-image: url('/site-img/background.png');
+  background-image: url('/public/site-img/background.png');
   /*input:-webkit-autofill {
       -webkit-box-shadow: 0 0 0px 1000px black inset;
   }*/
@@ -18,7 +18,7 @@ body{
 **************************/
 @font-face {
   font-family: "sui-generis";
-  src: url("/fonts/sui-generis-rg.ttf") format('truetype');
+  src: url("/public/fonts/sui-generis-rg.ttf") format('truetype');
 }
 
 /**************************

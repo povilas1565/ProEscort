@@ -22,7 +22,7 @@ class AddTableProfiles extends Migration
         $table->string('zodiac',255)->nullable();
         $table->integer('height')->nullable();
         $table->integer('weight')->nullable();
-        $table->string('constituion',255)->nullable();
+        $table->string('constitution',255)->nullable();
       });
       //------------------foreign keys----------------------------------------
       Schema::table('profiles',function($table){

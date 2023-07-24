@@ -26,13 +26,13 @@
             </div>
         </div>
         <div class="col-md-4 format_sign_up_form">
-            <span>Esti sau cauti o escorta?</span>
+            <span>Are you or are you looking for an escort?</span>
             <div class="sign_up_form">
-                <img src="{{ asset("site-img/sign_up.png") }}" width="30"><a href="#">Inscrie-te acum!</a>
+                <img src="{{ asset("site-img/sign_up.png") }}" width="30"><a href="#">Register now!</a>
             </div>
         </div>
         <div class="col-md-4">
-          <span>Daca ai deja cont, te poti loga aici:</span>
+          <span>If you already have an account, you can log in here:</span>
           <div class="sign-in-form">
               {!! Form::open(['autocomplete'=>'off']) !!}
               <div class="log-in-inputs">
@@ -40,7 +40,7 @@
                 {!! Form::password('password',['class'=>'form-control format_inputs']) !!}
               </div>
               <div class="log-in-buttons">
-                  {!! Form::submit('Logare',['class'=>"form-control format-login-button"]) !!}
+                  {!! Form::submit('Logging in',['class'=>"form-control format-login-button"]) !!}
               </div>
               {!! Form::close() !!}
          </div>
